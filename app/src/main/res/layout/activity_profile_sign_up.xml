@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="16dp">
+
+        <ir.daneshjou_yaar.Custom_Text_View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="جهت ثبت نام لطفا اطلاعات زیر را با دقت وارد نموده و سپس دکمه ثبت نام را لمس نمایید :"
+            android:textColor="@color/icons"
+            android:textSize="18sp"/>
+
+
+        <ir.daneshjou_yaar.Custom_TextInput_Layout
+            android:id="@+id/sign_up_form_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:id="@+id/sign_up_form_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:hint="نام"
+                android:inputType="textPersonName"
+                android:textColor="@color/icons"/>
+        </ir.daneshjou_yaar.Custom_TextInput_Layout>
+
+        <ir.daneshjou_yaar.Custom_TextInput_Layout
+            android:id="@+id/sign_up_form_family_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/sign_up_form_family"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:hint="نام خانوادگی"
+                android:inputType="textPersonName"
+                android:textColor="@color/icons"/>
+        </ir.daneshjou_yaar.Custom_TextInput_Layout>
+
+        <ir.daneshjou_yaar.Custom_TextInput_Layout
+            android:id="@+id/sign_up_form_username_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/sign_up_form_username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:hint="نام کاربری"
+                android:inputType="textPersonName"
+                android:textColor="@color/icons"/>
+        </ir.daneshjou_yaar.Custom_TextInput_Layout>
+
+        <ir.daneshjou_yaar.Custom_TextInput_Layout
+            android:id="@+id/sign_up_form_email_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/sign_up_form_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:hint="ایمیل"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/icons"/>
+        </ir.daneshjou_yaar.Custom_TextInput_Layout>
+
+        <ir.daneshjou_yaar.Custom_TextInput_Layout
+            android:id="@+id/sign_up_form_password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/sign_up_form_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:hint="پسورد"
+                android:inputType="textPassword"
+                android:textColor="@color/icons"/>
+        </ir.daneshjou_yaar.Custom_TextInput_Layout>
+
+        <ir.daneshjou_yaar.Custom_TextInput_Layout
+            android:id="@+id/sign_up_form_password_again_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/sign_up_form_password_again"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:hint="پسورد دوباره"
+                android:inputType="textPassword"
+                android:textColor="@color/icons"
+                />
+        </ir.daneshjou_yaar.Custom_TextInput_Layout>
+
+        <ir.daneshjou_yaar.Custom_Text_View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="اطلاعات جهت برقراری تماس (در آگهی شما ثبت می شود):"
+            android:textColor="@color/icons"
+            android:textSize="18sp"/>
+
+        <ir.daneshjou_yaar.Custom_TextInput_Layout
+            android:id="@+id/sign_up_form_telegram_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <EditText
+                android:id="@+id/sign_up_form_telegram"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:hint="آیدی تلگرام"
+                android:inputType="textPersonName"
+                android:textColor="@color/icons"
+
+                />
+        </ir.daneshjou_yaar.Custom_TextInput_Layout>
+
+        <ir.daneshjou_yaar.Custom_TextInput_Layout
+            android:id="@+id/sign_up_form_phone_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/sign_up_form_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:hint="تلفن تماس"
+                android:inputType="phone"
+                android:textColor="@color/icons"/>
+        </ir.daneshjou_yaar.Custom_TextInput_Layout>
+
+
+        <CheckBox
+            android:id="@+id/sign_up_form_agreement_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="start"
+            android:layoutDirection="rtl"
+            android:text="تمامی قوانین و شرایط را مطالعه و قبول دارم"
+            android:textColor="@color/icons"/>
+
+        <Button
+            android:id="@+id/sign_up_form_register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#04931c"
+            android:text="ثبت نام"
+            android:textColor="@color/icons"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="400dp"
+    android:layout_gravity="center"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+        <ImageView
+            android:id="@+id/large_image_showing_detail_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="image"
+            android:scaleType="fitXY"
+            android:src="@drawable/placeholder"/>
+
+
+        <ImageView
+            android:id="@+id/close_btn_large_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="6dp"
+        android:background="@color/icons"
+        tools:ignore="ContentDescription"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ir.daneshjou_yaar.Custom_Text_View
+                android:id="@+id/large_image_detail_description"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="توضیحات"
+                android:textColor="@color/icons"
+                android:textSize="16sp"
+                />
+
+            <ir.daneshjou_yaar.Custom_Text_View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:textColor="@color/icons"
+                android:text="توضیحات :"
+               />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ir.daneshjou_yaar.Custom_Text_View
+                android:id="@+id/large_image_detail_address"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="آدرس"
+                android:textColor="@color/icons"
+                android:textSize="16sp"
+                />
+
+            <ir.daneshjou_yaar.Custom_Text_View
+                android:layout_width="0dp"
+                android:textColor="@color/icons"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="آدرس :"
+              />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/go_to_googlemap_large_image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal">
+
+            <ir.daneshjou_yaar.Custom_Text_View
+                android:id="@+id/go_to_googlemap_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="نمایش بر روی نقشه"
+                android:textColor="@color/icons"
+                android:textSize="16sp"
+                tools:text="نمایش بر روی نقشه"/>
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:contentDescription="googlemap"
+                android:padding="8dp"
+                android:src="@drawable/googlemap"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

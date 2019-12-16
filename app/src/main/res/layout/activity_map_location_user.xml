@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:map="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="wrap_content"
+    android:layout_width="300dp"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:background="@color/colorPrimaryDark"
+    >
+
+    <ir.daneshjou_yaar.Custom_Text_View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="لطفا موقعیت دقیق شغل خود را بر روی نقشه مشخص کنید :(
+همچنین شما میتوانید با روشن کردن GPS گوشی خود به این کار تسریع دهید)"
+        android:textColor="@color/icons"/>
+
+    <fragment
+        android:id="@+id/map_location_user"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        tools:context="ir.daneshjou_yaar.location_address.Map_location_user"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:id="@+id/activity_map_location_user_agree_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/green">
+
+            <ir.daneshjou_yaar.Custom_Text_View
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="تایید"
+                android:textColor="@color/icons"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_map_location_user_cancel_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/red_map">
+
+
+            <ir.daneshjou_yaar.Custom_Text_View
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="انصراف"
+                android:textColor="@color/icons"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

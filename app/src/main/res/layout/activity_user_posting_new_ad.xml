@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingTop="26dp">
+
+        <ir.daneshjou_yaar.Custom_Text_View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="جهت ثبت آگهی خود ، اطلاعات زیر را وارد و سپس دکمه ثبت را لمس نمایید :"
+            android:textColor="@color/icons"
+            android:textSize="18sp"/>
+
+        <ir.daneshjou_yaar.Custom_TextInput_Layout
+            android:id="@+id/new_ad_title_inputlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/new_ad_title_edittxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:hint="عنوان آگهی"
+                android:inputType="textPersonName"
+                android:textColor="@color/icons"/>
+
+        </ir.daneshjou_yaar.Custom_TextInput_Layout>
+
+
+        <ir.daneshjou_yaar.Custom_TextInput_Layout
+            android:id="@+id/new_ad_description_inputlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusedByDefault="false">
+
+            <EditText
+                android:id="@+id/new_ad_description_edittxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:hint="توضیح آگهی"
+                android:inputType="textMultiLine"
+                android:textColor="@color/icons"/>
+
+        </ir.daneshjou_yaar.Custom_TextInput_Layout>
+
+
+        <ir.daneshjou_yaar.Custom_TextInput_Layout
+            android:id="@+id/new_ad_price_inputlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/new_ad_price_edittxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:hint="قیمت پیشنهادی به تومان"
+                android:inputType="number"
+                android:nextFocusLeft="@id/new_ad_price_edittxt"
+                android:nextFocusUp="@id/new_ad_price_edittxt"
+                android:textColor="@color/icons"/>
+
+        </ir.daneshjou_yaar.Custom_TextInput_Layout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="right"
+            >
+            <Spinner
+                android:id="@+id/new_ad_categories_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <ir.daneshjou_yaar.Custom_Text_View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="دسته بندی :"
+                android:textColor="#ffff"
+                android:textSize="18sp"/>
+
+
+
+        </LinearLayout>
+
+
+        <ir.daneshjou_yaar.Custom_Text_View
+            android:id="@+id/new_ad_choosing_photo_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="لطفا تصویر مربوط به آگهی را انتخاب نمایید :"
+            android:textColor="@color/icons"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/new_ad_photo_camera_linear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:src="@drawable/ic_add_a_photo_white_48dp"/>
+
+                <ir.daneshjou_yaar.Custom_Text_View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="دوربین"
+                    android:textColor="@color/icons"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/new_ad_photo_library_linear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:src="@drawable/ic_photo_library_white_48dp"/>
+
+                <ir.daneshjou_yaar.Custom_Text_View
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="گالری"
+                    android:textColor="@color/icons"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/new_ad_photo_choosed"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+
+        <Button
+            android:id="@+id/new_ad_register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#04931c"
+            android:text="ثبت آگهی"
+            android:textColor="@color/icons"/>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

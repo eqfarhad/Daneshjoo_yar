@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app1="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+
+        android:id="@+id/view_background"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_round_userposts_item_delete">
+
+        <ImageView
+            android:id="@+id/delete_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_delete_white_24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/delete_icon"
+            android:text="حذف"
+            android:textColor="#fff"
+            android:textSize="13dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/view_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/location_model_detail_item_background"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/profile_userpost_recycle_image"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/placeholder"
+            android:visibility="visible"/>
+
+
+        <ProgressBar
+            android:id="@+id/progressBar_profile_userpost_ad"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:paddingEnd="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingStart="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="right">
+
+                <ProgressBar
+                    android:id="@+id/profile_userpost_recycle_loading_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <ir.daneshjou_yaar.Custom_Text_View
+                    android:id="@+id/profile_userpost_recycle_title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="تیتر"
+                    android:textColor="#000000"
+                    android:textDirection="rtl"
+                    app1:fontname="Titr.ttf"/>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/primary_light"
+                tools:ignore="ContentDescription"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="end">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight=".08"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_attach_money_black_48dp"
+                    tools:ignore="ContentDescription"/>
+
+                <ir.daneshjou_yaar.Custom_Text_View
+                    android:id="@+id/profile_userpost_recycle_price"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="قیمت"
+                    android:textColor="#000000"
+                    android:textDirection="rtl"
+                    android:textSize="18sp"
+                    app1:fontname="IRKamran.ttf"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight=".08"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_access_time_black_48dp"
+                    tools:ignore="ContentDescription"/>
+
+                <ir.daneshjou_yaar.Custom_Text_View
+                    android:id="@+id/profile_userpost_recycle_date"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="زمان"
+                    android:textColor="#000000"
+                    android:textDirection="rtl"
+                    android:textSize="18sp"
+                    app1:fontname="IRKamran.ttf"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight=".08"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/baseline_visibility_black_48"
+                    tools:ignore="ContentDescription"/>
+
+                <ir.daneshjou_yaar.Custom_Text_View
+                    android:id="@+id/profile_userpost_recycle_visit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="تعداد بازدید"
+                    android:textColor="#000000"
+                    android:textDirection="rtl"
+                    android:textSize="18sp"
+                    app1:fontname="IRKamran.ttf"
+                    />
+
+            </LinearLayout>
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                &lt;!&ndash;<TextView&ndash;&gt;
+                    &lt;!&ndash;android:id="@+id/location"&ndash;&gt;
+                    &lt;!&ndash;android:layout_width="0dp"&ndash;&gt;
+                    &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                    &lt;!&ndash;android:layout_weight=".75"&ndash;&gt;
+                    &lt;!&ndash;android:text="مکان"&ndash;&gt;
+                    &lt;!&ndash;android:textColor="#ffffff"&ndash;&gt;
+                    &lt;!&ndash;android:textDirection="rtl"&ndash;&gt;
+                    &lt;!&ndash;android:gravity="center_vertical"&ndash;&gt;
+                    &lt;!&ndash;android:textSize="12sp"/>&ndash;&gt;
+
+                <ir.eqtdaneshjou_yaar_yar.Custom_Text_View
+                    android:id="@+id/city"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="مکان"
+                    android:textColor="#000000"
+                    android:textDirection="rtl"
+                    android:textSize="18sp"
+                    app1:fontname="IRKamran.ttf"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".08"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_location_on_black_48dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    tools:ignore="ContentDescription"/>
+
+            </LinearLayout>-->
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/tab_image"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_home_white_48dp"
+        android:visibility="visible"/>
+
+    <ir.daneshjou_yaar.Custom_Text_View
+        android:id="@+id/tab_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="صفحه اصلی"
+        android:gravity="center"
+        android:textColor="#ffffff"/>
+
+
+</LinearLayout>

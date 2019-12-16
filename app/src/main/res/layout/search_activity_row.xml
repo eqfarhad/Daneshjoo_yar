@@ -1,0 +1,26 @@
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ir.daneshjou_yaar.Custom_Text_View
+            android:id="@+id/stringName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="false"
+            android:layout_centerVertical="true"
+            android:gravity="right|center_vertical"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:text="تست تست"
+            android:textAllCaps="false"
+            android:textSize="22sp"/>
+
+    </RelativeLayout>
+
+</layout>

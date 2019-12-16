@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/primary_light"
+              android:gravity="center"
+              android:layoutDirection="rtl"
+              android:orientation="vertical"
+    >
+    <!-- color background pishnahadi inam khoobe , tire tare #23839b-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_mainpage_recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="22dp"
+        android:visibility="visible">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <ProgressBar
+        android:id="@+id/fragment_mainpage_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+
+        android:visibility="gone"/>
+
+    <!-- <include
+        android:id="@+id/error_layout"
+        layout="@layout/fragment_mainpage_error_layout"/>-->
+
+    <LinearLayout
+        android:id="@+id/fragment_main_error_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <ir.daneshjou_yaar.Custom_Text_View
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="متاسفیم ! قادر به دریافت اطلاعات نیستیم :("/>
+
+        <ir.daneshjou_yaar.Custom_Text_View
+            android:id="@+id/fragment_main_error_txt_cause"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            tools:text="سرور در زمان مناسب پاسخ نداد..."/>
+
+        <Button
+            android:id="@+id/fragment_main_error_btn_retry"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:text="تلاش دوباره"
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/linear_layout_recycler_item_profile"
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+              android:layout_marginEnd="4dp"
+              android:layout_marginLeft="4dp"
+              android:layout_marginRight="4dp"
+              android:layout_marginStart="4dp"
+              android:layout_marginTop="8dp"
+              android:background="@drawable/shape_linear"
+              android:orientation="horizontal">
+
+    <ir.daneshjou_yaar.Custom_Text_View
+        android:id="@+id/fragment_profile_recyclerview_title"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:text="درج آگهی"
+        android:textSize="22sp"/>
+
+    <ImageView
+        android:id="@+id/fragment_profile_recyclerview_image"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bg_item_recycleview_profile_menu"
+        android:padding="8dp"
+        android:src="@drawable/ic_add_shopping_cart_white_48dp"/>
+
+</LinearLayout>
