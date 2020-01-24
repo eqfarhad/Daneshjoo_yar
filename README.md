@@ -6,4 +6,10 @@ you can find that i used map, push notification, sqlite, new way of using the dr
 Feel free to contact with me if you have any question.
 www.eqtech.ir
 
-<img src="images_readme/1.png" />
+<img src="readme_images/2019_03_03_20_34_48.gif" height=300/> <img src="readme_images/2019_03_03_20_39_12.gif" height=300/>
+<img src="readme_images/2019_03_03_20_45_08.gif" height=300/>
+<img src="readme_images/2.PNG" height=300/> <img src="readme_images/1.PNG" height=300/>
+<img src="readme_images/3.PNG" height=300/>
+<img src="readme_images/4.PNG" height=300/>
+
+
